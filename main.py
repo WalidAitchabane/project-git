@@ -16,7 +16,7 @@ class Graph:
 
     def dfs(self, v):
         visited = set()
-        self.dfs_rec(v, visited)
+        self.__dfs_util(v, visited)
         
 g = Graph()
 g.add_edge(0, 1)
