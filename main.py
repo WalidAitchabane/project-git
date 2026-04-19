@@ -17,6 +17,11 @@ class Graph:
     def dfs(self, v):
         visited = set()
         self.__dfs_util(v, visited)
+    
+    def __str__(self):
+        nodes = set()
+        self.__dfs_util(0, nodes)
+        return "Graph({})".format(", ".join([str(i) for i in list(nodes)]))
         
 g = Graph()
 g.add_edge(0, 1)
