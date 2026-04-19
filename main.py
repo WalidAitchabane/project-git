@@ -20,6 +20,7 @@ class Graph:
     
     def __str__(self):
         nodes = set()
+        i+=1
         self.__dfs_util(0, nodes)
         return "Graph({})".format(", ".join([str(i) for i in list(nodes)]))
         
